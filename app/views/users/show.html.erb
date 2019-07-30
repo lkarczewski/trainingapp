@@ -12,3 +12,14 @@
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+
+<h2>Microposts</h2>
+  <tbody>
+    <tr>
+      <td><%= @user.microposts.first.content%>
+    </tr>
+  </tbody>
+
+<%= link_to 'Show', @user.microposts.first %>
+<%= link_to 'Edit', edit_micropost_path(@user.microposts.first) %>
+<%= link_to 'Destroy', @user.microposts.first, method: :delete, data: { confirm: 'Are you sure?' } %>

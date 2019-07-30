@@ -461,3 +461,656 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 29ms (Views: 24.4ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/microposts" for ::1 at 2019-07-30 15:08:39 +0200
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (1.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 33ms (Views: 27.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/microposts/new" for ::1 at 2019-07-30 15:08:43 +0200
+Processing by MicropostsController#new as HTML
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (31.3ms)
+  Rendered microposts/new.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 72ms (Views: 50.7ms | ActiveRecord: 5.2ms)
+
+
+Started POST "/microposts" for ::1 at 2019-07-30 15:08:50 +0200
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GU5THnZ1GRvMVYMsniNH/xXMBJqgonTQgX8zR4ndDZ+1qDbjxRzQ6Ph6rY6trPy4qj2b9U8zpHQfvYk1JInUcQ==", "micropost"=>{"content"=>"First", "user_id"=>"4"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[36mMicropost Create (1.2ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "First"], ["user_id", 4], ["created_at", "2019-07-30 13:08:50.576023"], ["updated_at", "2019-07-30 13:08:50.576023"]]
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:30
+Redirected to http://localhost:3000/microposts/1
+Completed 302 Found in 17ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/microposts/1" for ::1 at 2019-07-30 15:08:50 +0200
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:67
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/microposts" for ::1 at 2019-07-30 15:08:53 +0200
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (1.2ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 88ms (Views: 83.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/microposts/new" for ::1 at 2019-07-30 15:08:54 +0200
+Processing by MicropostsController#new as HTML
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (9.8ms)
+  Rendered microposts/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 109ms (Views: 105.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/microposts" for ::1 at 2019-07-30 15:09:00 +0200
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OLSZmWOPVyvSQF9t71YMmRF9Xtw7czcFcqNGLztw2zGUUvxk0Oae2OZvcc/c2bferozBs9Ti56HsYfxdliQC3w==", "micropost"=>{"content"=>"Second", "user_id"=>"4"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[36mMicropost Create (0.3ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Second"], ["user_id", 4], ["created_at", "2019-07-30 13:09:00.159694"], ["updated_at", "2019-07-30 13:09:00.159694"]]
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:30
+Redirected to http://localhost:3000/microposts/2
+Completed 302 Found in 14ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/microposts/2" for ::1 at 2019-07-30 15:09:00 +0200
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:67
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/microposts" for ::1 at 2019-07-30 15:09:01 +0200
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (1.2ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 101ms (Views: 96.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/microposts" for ::1 at 2019-07-30 15:11:06 +0200
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 72ms (Views: 64.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/microposts/new" for ::1 at 2019-07-30 15:11:09 +0200
+Processing by MicropostsController#new as HTML
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (9.2ms)
+  Rendered microposts/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 91ms (Views: 86.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/microposts" for ::1 at 2019-07-30 15:11:42 +0200
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3CUFzhIeTIbEnIZMJB3l1dPo31iEbsTZXqMJb/LEh5xww2AzoXeFdfCzqO4Xkl6SbBlAN2v/FH3AYbMdX5Becg==", "micropost"=>{"content"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus venenatis eros eget euismod. Curabitur condimentum eget ex eu tempus. Nullam eget dolor neque. Vivamus at iaculis nisl. Quisque porttitor pharetra blandit. Mauris vitae rutrum tellus. Aenean commodo dolor vitae nisl pretium, et sagittis nisi suscipit. Maecenas in odio consectetur, pretium est et, rutrum erat. Vestibulum facilisis venenatis finibus. Cras et consequat risus. Integer ultrices nisi nec quam tincidunt malesuada. Sed et turpis non nulla fermentum finibus. Cras sit amet venenatis libero.\r\n\r\nSuspendisse mollis nisi sem, id blandit nisi dapibus et. Praesent malesuada lacinia est sed sagittis. Proin eros lorem, sodales vel velit sit amet, rhoncus aliquam sem. Donec eleifend eleifend vulputate. Pellentesque non magna sed sem tincidunt lobortis. Nam vitae ex massa. Aliquam ut velit vel tortor sodales semper. Praesent non diam risus. Phasellus sed mi vestibulum arcu aliquet bibendum et non nunc. Nunc eget urna mollis, hendrerit massa non, feugiat nisl. Maecenas pretium dolor at arcu congue porta. Nulla vestibulum commodo sem id sodales. Curabitur nec aliquam mauris. Aenean non hendrerit augue. Sed non consectetur ipsum, sit amet tempor velit. Proin malesuada ante velit, nec congue nibh ultricies at.", "user_id"=>"4"}, "commit"=>"Create Micropost"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/microposts_controller.rb:30
+  Rendering microposts/new.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (3.1ms)
+  Rendered microposts/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 34ms (Views: 28.9ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 11]]
+  [1m[36mMicropost Load (0.7ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+Started GET "/users/4" for ::1 at 2019-07-30 15:32:22 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 19.3ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/users/" for ::1 at 2019-07-30 15:33:04 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/4" for ::1 at 2019-07-30 15:33:07 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 88ms (Views: 79.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/4" for ::1 at 2019-07-30 15:34:44 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 79ms (Views: 71.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/4" for ::1 at 2019-07-30 15:34:51 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/4" for ::1 at 2019-07-30 15:37:56 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (245.5ms)
+Completed 500 Internal Server Error in 260ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007f17ac155f70>:0x00007f17b5cb6618>
+Did you mean?  @user):
+    13: <h2>Microposts</h2>
+    14:   <tbody>
+    15:     <tr>
+    16:       <td><%= user.Microposts.first.content%>
+    17:     </tr>
+    18:   </tbody>
+    19: 
+  
+app/views/users/show.html.erb:16:in `_app_views_users_show_html_erb__983601349102103607_69869905491760'
+Started GET "/users/4" for ::1 at 2019-07-30 15:38:20 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `Microposts' for #<User:0x00007f17b5e76408>
+Did you mean?  microposts=
+               micropost_ids):
+    13: <h2>Microposts</h2>
+    14:   <tbody>
+    15:     <tr>
+    16:       <td><%= @user.Microposts.first.content%>
+    17:     </tr>
+    18:   </tbody>
+    19: 
+  
+app/views/users/show.html.erb:16:in `_app_views_users_show_html_erb__983601349102103607_69869906405060'
+Started GET "/users/4" for ::1 at 2019-07-30 15:38:27 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:16
+  Rendered users/show.html.erb within layouts/application (51.4ms)
+Completed 200 OK in 127ms (Views: 111.1ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/users/4/edit" for ::1 at 2019-07-30 15:40:46 +0200
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (1.8ms)
+  Rendered users/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 37ms (Views: 24.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 15:40:49 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/4" for ::1 at 2019-07-30 15:40:51 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Load (1.2ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:16
+  Rendered users/show.html.erb within layouts/application (71.9ms)
+Completed 200 OK in 124ms (Views: 98.2ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/users/4" for ::1 at 2019-07-30 15:41:29 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/4" for ::1 at 2019-07-30 15:43:32 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Load (3.4ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  Rendered users/show.html.erb within layouts/application (279.5ms)
+Completed 500 Internal Server Error in 293ms (ActiveRecord: 4.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `micropost' for #<#<Class:0x00007f17b5a53768>:0x00007f17bc1da3a0>
+Did you mean?  micropost_url):
+    20:     </tr>
+    21:   </tbody>
+    22: 
+    23: <%= link_to 'Show', micropost %>
+    24: <%= link_to 'Edit', edit_micropost_path(micropost) %>
+    25: <%= link_to 'Destroy', micropost, method: :delete, data: { confirm: 'Are you sure?' } %>
+  
+app/views/users/show.html.erb:23:in `_app_views_users_show_html_erb__983601349102103607_69869958518260'
+Started GET "/users/4" for ::1 at 2019-07-30 15:43:53 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  Rendered users/show.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"microposts", :id=>nil}, missing required keys: [:id]):
+    21:   </tbody>
+    22: 
+    23: <%= link_to 'Show', @micropost %>
+    24: <%= link_to 'Edit', edit_micropost_path(@micropost) %>
+    25: <%= link_to 'Destroy', @micropost, method: :delete, data: { confirm: 'Are you sure?' } %>
+  
+app/views/users/show.html.erb:24:in `_app_views_users_show_html_erb__983601349102103607_69869824364040'
+Started GET "/users/4" for ::1 at 2019-07-30 15:44:07 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  Rendered users/show.html.erb within layouts/application (236.8ms)
+Completed 500 Internal Server Error in 240ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `micropost' for #<#<Class:0x00007f17b5a53768>:0x00007f17ac1c8a98>
+Did you mean?  micropost_url):
+    21:   </tbody>
+    22: 
+    23: <%= link_to 'Show', @micropost %>
+    24: <%= link_to 'Edit', edit_micropost_path(micropost) %>
+    25: <%= link_to 'Destroy', @micropost, method: :delete, data: { confirm: 'Are you sure?' } %>
+  
+app/views/users/show.html.erb:24:in `_app_views_users_show_html_erb__983601349102103607_69869824264680'
+Started GET "/users/4" for ::1 at 2019-07-30 15:44:54 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Load (0.7ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:23
+  Rendered users/show.html.erb within layouts/application (286.7ms)
+Completed 500 Internal Server Error in 292ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007f17b5a53768>:0x00007f17b5f80cb8>
+Did you mean?  @user):
+    21:   </tbody>
+    22: 
+    23: <%= link_to 'Show', @user.microposts.first %>
+    24: <%= link_to 'Edit', edit_micropost_path(user.microposts.first) %>
+    25: <%= link_to 'Destroy', @user.microposts.first, method: :delete, data: { confirm: 'Are you sure?' } %>
+  
+app/views/users/show.html.erb:24:in `_app_views_users_show_html_erb__983601349102103607_69869906954940'
+Started GET "/users/4" for ::1 at 2019-07-30 15:44:55 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Load (0.9ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:23
+  Rendered users/show.html.erb within layouts/application (234.9ms)
+Completed 500 Internal Server Error in 246ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x00007f17b5a53768>:0x00007f17bc0ac3e8>
+Did you mean?  @user):
+    21:   </tbody>
+    22: 
+    23: <%= link_to 'Show', @user.microposts.first %>
+    24: <%= link_to 'Edit', edit_micropost_path(user.microposts.first) %>
+    25: <%= link_to 'Destroy', @user.microposts.first, method: :delete, data: { confirm: 'Are you sure?' } %>
+  
+app/views/users/show.html.erb:24:in `_app_views_users_show_html_erb__983601349102103607_69869957899840'
+Started GET "/users/4" for ::1 at 2019-07-30 15:45:02 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:23
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  Rendered users/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 45ms (Views: 42.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/microposts/1" for ::1 at 2019-07-30 15:45:04 +0200
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMicropost Load (1.0ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:67
+  Rendering microposts/show.html.erb within layouts/application
+  Rendered microposts/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 47ms (Views: 42.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/microposts" for ::1 at 2019-07-30 15:45:05 +0200
+Processing by MicropostsController#index as HTML
+  Rendering microposts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts"[0m
+  ↳ app/views/microposts/index.html.erb:15
+  Rendered microposts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 39ms (Views: 37.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user/4" for ::1 at 2019-07-30 15:45:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/user/4"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/4" for ::1 at 2019-07-30 15:45:22 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:19
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:23
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:24
+  [1m[36mCACHE Micropost Load (0.1ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY "microposts"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:25
+  Rendered users/show.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 48ms (Views: 43.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/microposts/1/edit" for ::1 at 2019-07-30 15:45:24 +0200
+Processing by MicropostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMicropost Load (1.6ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:67
+  Rendering microposts/edit.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (13.1ms)
+  Rendered microposts/edit.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 88ms (Views: 78.8ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/microposts/1" for ::1 at 2019-07-30 15:45:28 +0200
+Processing by MicropostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EMb9lkJBwXXE4Q3ZSDfSq9vpCUunPTsW+IfyWCyZU8LaewA6G4FTqU+flej9RJp/c+RfBfhAdxJUXW6w7GxLrA==", "micropost"=>{"content"=>"", "user_id"=>"4"}, "commit"=>"Update Micropost", "id"=>"1"}
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:67
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:44
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:44
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/microposts_controller.rb:44
+  Rendering microposts/edit.html.erb within layouts/application
+  Rendered microposts/_form.html.erb (2.8ms)
+  Rendered microposts/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 42ms (Views: 31.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 15:46:58 +0200
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 2.8ms)
+
+
+  
+NameError (undefined local variable or method `email' for #<Class:0x00007f17ac25dfa8>):
+  
+app/models/user.rb:4:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:7:in `index'
+Started GET "/users" for ::1 at 2019-07-30 15:48:16 +0200
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant User::Name):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:7:in `index'
+Started GET "/users" for ::1 at 2019-07-30 15:48:17 +0200
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant User::Name):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:7:in `index'
+Started GET "/users" for ::1 at 2019-07-30 15:48:17 +0200
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant User::Name):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:7:in `index'
+Started GET "/users" for ::1 at 2019-07-30 15:48:27 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 39ms (Views: 28.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/users/new" for ::1 at 2019-07-30 15:48:30 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.7ms)
+  Rendered users/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 94ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 15:48:32 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"slLRQYkD1n5kThSkBgw/vgnuvMq/g7JkjjmJxe6ij05fNk3x5Dcdes7a+NX50Z6TvT8j9RlyGX1RlUlST+Edag==", "user"=>{"name"=>"", "email"=>""}, "commit"=>"Create User"}
+  [1m[35m (5.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:30
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 6.8ms)
+
+
+  
+NoMethodError (undefined method `User' for #<User:0x00007f17b555a3b0>
+Did you mean?  super):
+  
+app/controllers/users_controller.rb:30:in `block in create'
+app/controllers/users_controller.rb:29:in `create'
+Started GET "/users" for ::1 at 2019-07-30 15:48:55 +0200
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.4ms)
+
+
+  
+NameError (undefined local variable or method `user' for #<Class:0x00007f17b5b08eb0>
+Did you mean?  super):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:7:in `index'
+Started GET "/users" for ::1 at 2019-07-30 15:48:56 +0200
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `user' for #<Class:0x00007f17b4ae04e8>
+Did you mean?  super):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:7:in `index'
+Started GET "/users" for ::1 at 2019-07-30 15:49:08 +0200
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 4.7ms)
+
+
+  
+NoMethodError (undefined method `email' for #<Class:0x00007f17b81d0a20>):
+  
+app/models/user.rb:4:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:7:in `index'
+Started GET "/users" for ::1 at 2019-07-30 15:49:09 +0200
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `email' for #<Class:0x00007f17bc1292f8>):
+  
+app/models/user.rb:4:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:7:in `index'
+Started GET "/users" for ::1 at 2019-07-30 15:49:48 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 35ms (Views: 27.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/users/new" for ::1 at 2019-07-30 15:49:50 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (9.3ms)
+  Rendered users/new.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 93ms (Views: 89.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 15:49:52 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HRaphwKydG8Sg8DySLI3GAO/OacfeAvM8Z8v+QtMgYjwcjU3b4a/a7gXLIO3b5Y1t26mmLmJoNUuM+9uqg8TrA==", "user"=>{"name"=>"", "email"=>""}, "commit"=>"Create User"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:30
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:30
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (14.6ms)
+  Rendered users/new.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 92ms (Views: 75.8ms | ActiveRecord: 1.1ms)
+
+
