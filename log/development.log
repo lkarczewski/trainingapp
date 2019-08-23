@@ -2993,3 +2993,1027 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 83ms (Views: 71.4ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/" for ::1 at 2019-08-23 16:20:58 +0200
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (259.0ms)
+  Rendered layouts/_rails_default.html.erb (101.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 373ms (Views: 367.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 16:21:00 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_rails_default.html.erb (85.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 110ms (Views: 107.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 16:21:02 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_rails_default.html.erb (35.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-08-23 16:21:05 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/lukasz/Training/trainingapp/app/views/sessions/new.html.erb:6: syntax error, unexpected '<'
+...reeze;@output_buffer.append=  <%= form_for(:session, url: lo...
+...                              ^
+/home/lukasz/Training/trainingapp/app/views/sessions/new.html.erb:17: syntax error, unexpected '<'
+...reeze;@output_buffer.append=( <%= link_to 'Sign up now!', si...
+...                              ^
+/home/lukasz/Training/trainingapp/app/views/sessions/new.html.erb:21: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/lukasz/Training/trainingapp/app/views/sessions/new.html.erb:23: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/sessions/new.html.erb:6: syntax error, unexpected '<'
+app/views/sessions/new.html.erb:17: syntax error, unexpected '<'
+app/views/sessions/new.html.erb:21: syntax error, unexpected ensure, expecting ')'
+app/views/sessions/new.html.erb:23: syntax error, unexpected end, expecting ')'
+Started GET "/login" for ::1 at 2019-08-23 16:21:19 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/lukasz/Training/trainingapp/app/views/sessions/new.html.erb:17: syntax error, unexpected '<'
+...reeze;@output_buffer.append=( <%= link_to 'Sign up now!', si...
+...                              ^
+/home/lukasz/Training/trainingapp/app/views/sessions/new.html.erb:21: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/lukasz/Training/trainingapp/app/views/sessions/new.html.erb:23: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/sessions/new.html.erb:17: syntax error, unexpected '<'
+app/views/sessions/new.html.erb:21: syntax error, unexpected ensure, expecting ')'
+app/views/sessions/new.html.erb:23: syntax error, unexpected end, expecting ')'
+Started GET "/login" for ::1 at 2019-08-23 16:21:34 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (17.7ms)
+  Rendered layouts/_rails_default.html.erb (41.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 70ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-08-23 16:23:39 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_rails_default.html.erb (240.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 261ms (Views: 255.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-08-23 16:24:22 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kU7/DJGyQfLLXhwc2BHc8grnInEVPjv4qCxAGPmqO7DteYdJm2c7lnjUWq9M6DXjVoIwZw48uS6imvEz34LpIA==", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_rails_default.html.erb (96.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 111ms (Views: 110.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-08-23 17:44:48 +0200
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_rails_default.html.erb (302.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 331ms (Views: 324.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-08-23 17:46:59 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (29.2ms)
+  Rendered layouts/_rails_default.html.erb (248.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 293ms (Views: 286.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-08-23 17:47:01 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WsUcmh3t/M0FG7C8ajQazDvTidRbMKruQnQ+GBKHGuom8mTfFziGqbaR9g/+zfPdZ7abwkAyKDhIwo8zNK/Ieg==", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_rails_default.html.erb (64.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 104ms (Views: 73.6ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 17:47:11 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_rails_default.html.erb (55.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 83ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 17:47:36 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_rails_default.html.erb (79.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 107ms (Views: 102.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:00:38 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_rails_default.html.erb (37.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:04:34 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_rails_default.html.erb (64.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 104ms (Views: 99.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:04:35 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_rails_default.html.erb (46.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 79ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:04:35 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_rails_default.html.erb (73.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (9.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 114ms (Views: 109.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:04:36 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_rails_default.html.erb (30.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:05:01 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_rails_default.html.erb (39.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:12:29 +0200
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (183.0ms)
+  Rendered layouts/_rails_default.html.erb (40.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 236ms (Views: 230.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:12:33 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_rails_default.html.erb (98.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 124ms (Views: 119.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-08-23 18:12:38 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_rails_default.html.erb (41.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 135ms (Views: 64.6ms | ActiveRecord: 21.1ms)
+
+
+Started GET "/login" for ::1 at 2019-08-23 18:12:44 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_rails_default.html.erb (46.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-08-23 18:12:46 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jd7jJTg+5Ucg2KYI3K9ljU6Ve2woG3iEhYLnYJmHBsTx6ZtgMuufI5NS4LtIVoycEvBpejMZ+lKPNFZLv6/UVA==", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_rails_default.html.erb (43.0ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 75ms (Views: 56.9ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:12:47 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_rails_default.html.erb (63.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 89ms (Views: 85.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-08-23 18:18:26 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (undefined local variable or method `exception' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/signup" for ::1 at 2019-08-23 18:19:16 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.1ms)
+  Rendered users/new.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_rails_default.html.erb (287.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 320ms (Views: 301.3ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/login" for ::1 at 2019-08-23 18:19:21 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_rails_default.html.erb (41.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-08-23 18:20:44 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O92av4tPeCiqT6qwYZFiROqeb8vQWrNFWvMP9YAmB3pH6uL6gZoCTBnF7AP1aItVtvt93ctYMZNQRb7epg7V6g==", "session"=>{"email"=>"example@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "example@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_rails_default.html.erb (32.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 135ms (Views: 44.6ms | ActiveRecord: 8.2ms)
+
+
+Started POST "/login" for ::1 at 2019-08-23 18:20:50 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rOuvUjHVfxJxJWOLvQi/15oNJk4TWEoaJJK/60+xTfDQ3NcXOwAFdsKvJTgp8VbGxmg0WAhayMwuJA7AaZmfYA==", "session"=>{"email"=>"example@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "example@example.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_rails_default.html.erb (42.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 179ms (Views: 51.0ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/login" for ::1 at 2019-08-23 18:21:09 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_rails_default.html.erb (91.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 115ms (Views: 112.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-08-23 18:21:10 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_rails_default.html.erb (92.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 117ms (Views: 114.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for ::1 at 2019-08-23 18:21:14 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.6ms)
+  Rendered users/new.html.erb within layouts/application (19.1ms)
+  Rendered layouts/_rails_default.html.erb (91.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 132ms (Views: 127.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2019-08-23 18:21:39 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ydds06ji0rxCBAsxGOTCez5VEiUUKqQs3S2cY/XhUKDthSqHhjSmx0w6pnoSXFBVCRXiMR3wehylWYh4cKveRw==", "user"=>{"name"=>"Łukasz Karczewski", "email"=>"lukasz@lukasz.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:29
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "lukasz@lukasz.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:29
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Łukasz Karczewski"], ["email", "lukasz@lukasz.com"], ["created_at", "2019-08-23 16:21:39.652689"], ["updated_at", "2019-08-23 16:21:39.652689"], ["password_digest", "$2a$10$m3LTS7V73B4vRgCa1ByDXuaqAJMrcXwsrZPcgPJLG26DeEsyGrmSO"]]
+  ↳ app/controllers/users_controller.rb:29
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:29
+Redirected to http://localhost:3000/users/35
+Completed 302 Found in 100ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/users/35" for ::1 at 2019-08-23 18:21:39 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:65
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (43.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 51.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:21:42 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_rails_default.html.erb (48.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 84ms (Views: 77.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-08-23 18:21:46 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_rails_default.html.erb (44.3ms)
+  Rendered layouts/_shim.html.erb (16.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 71ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-08-23 18:21:56 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M9XDdqAKZXp5xYfmZCC/Ft/JXnrtWTPaQIm3jQuaTMtP4rszqt8fHspPwVXw2VYHg6xMbPZbsQxKPwamLbKeWw==", "session"=>{"email"=>"lukasz@lukasz.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lukasz@lukasz.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/users/35
+Completed 302 Found in 72ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/35" for ::1 at 2019-08-23 18:21:56 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:65
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (33.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 43ms (Views: 39.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:22:32 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_rails_default.html.erb (39.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:25:07 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_rails_default.html.erb (92.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 121ms (Views: 116.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-08-23 18:25:10 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_rails_default.html.erb (35.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 62ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-08-23 18:25:16 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cYa/AglHXAtUP2x4eATISoElQDrFGYfUFmaBxntFoycNscdHA5Imb+e1Ksvs/SFb3UBSLN4bBQIc0DDtXW1xtw==", "session"=>{"email"=>"lukasz@lukasz.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lukasz@lukasz.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/users/35
+Completed 302 Found in 74ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/35" for ::1 at 2019-08-23 18:25:16 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:65
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_rails_default.html.erb (29.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2019-08-23 18:45:25 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_rails_default.html.erb (61.1ms)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/lukasz/Training/trainingapp/app/assets/config
+  /home/lukasz/Training/trainingapp/app/assets/images
+  /home/lukasz/Training/trainingapp/app/assets/javascripts
+  /home/lukasz/Training/trainingapp/app/assets/stylesheets
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/actionview-5.2.3/lib/assets/compiled
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/lukasz/Training/trainingapp/node_modules
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/images):
+    1: <%= csrf_meta_tags %>
+    2: <%= stylesheet_link_tag    'application', media: 'all',
+    3:                                           'data-turbolinks-track': 'reload' %>
+    4: <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/_rails_default.html.erb:4:in `_app_views_layouts__rails_default_html_erb___1191710113720217882_70264155870720'
+app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1486162756475113985_70264155801680'
+Started GET "/" for ::1 at 2019-08-23 18:45:58 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_rails_default.html.erb (42.4ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/lukasz/Training/trainingapp/app/assets/config
+  /home/lukasz/Training/trainingapp/app/assets/images
+  /home/lukasz/Training/trainingapp/app/assets/javascripts
+  /home/lukasz/Training/trainingapp/app/assets/stylesheets
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/actionview-5.2.3/lib/assets/compiled
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/lukasz/Training/trainingapp/node_modules
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/images):
+    1: <%= csrf_meta_tags %>
+    2: <%= stylesheet_link_tag    'application', media: 'all',
+    3:                                           'data-turbolinks-track': 'reload' %>
+    4: <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/_rails_default.html.erb:4:in `_app_views_layouts__rails_default_html_erb___1191710113720217882_70264156118640'
+app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1486162756475113985_70264156069460'
+Started GET "/" for ::1 at 2019-08-23 18:46:44 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_rails_default.html.erb (81.0ms)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery_ujs' with type 'application/javascript'
+Checked in these paths: 
+  /home/lukasz/Training/trainingapp/app/assets/config
+  /home/lukasz/Training/trainingapp/app/assets/images
+  /home/lukasz/Training/trainingapp/app/assets/javascripts
+  /home/lukasz/Training/trainingapp/app/assets/stylesheets
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/actionview-5.2.3/lib/assets/compiled
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/lukasz/Training/trainingapp/node_modules
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/images):
+    1: <%= csrf_meta_tags %>
+    2: <%= stylesheet_link_tag    'application', media: 'all',
+    3:                                           'data-turbolinks-track': 'reload' %>
+    4: <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/_rails_default.html.erb:4:in `_app_views_layouts__rails_default_html_erb___1191710113720217882_70264156283980'
+app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1486162756475113985_70264156209520'
+Started GET "/" for ::1 at 2019-08-23 18:47:36 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_rails_default.html.erb (46.9ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/lukasz/Training/trainingapp/app/assets/config
+  /home/lukasz/Training/trainingapp/app/assets/images
+  /home/lukasz/Training/trainingapp/app/assets/javascripts
+  /home/lukasz/Training/trainingapp/app/assets/stylesheets
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/actionview-5.2.3/lib/assets/compiled
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/lukasz/Training/trainingapp/node_modules
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/bootstrap-sass-3.3.7/assets/images):
+    1: <%= csrf_meta_tags %>
+    2: <%= stylesheet_link_tag    'application', media: 'all',
+    3:                                           'data-turbolinks-track': 'reload' %>
+    4: <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/_rails_default.html.erb:4:in `_app_views_layouts__rails_default_html_erb___1191710113720217882_70264226571460'
+app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___1486162756475113985_70264225868180'
+Started GET "/" for ::1 at 2019-08-23 18:48:54 +0200
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1620.9ms)
+  Rendered layouts/_rails_default.html.erb (104.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 500 Internal Server Error in 1740ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/lukasz/Training/trainingapp/app/views/layouts/_header.html.erb:15: syntax error, unexpected '<'
+...reeze;@output_buffer.append=( <%= link_to 'Profile', current...
+...                              ^
+/home/lukasz/Training/trainingapp/app/views/layouts/_header.html.erb:16: syntax error, unexpected '<'
+...reeze;@output_buffer.append=( <%= link_to 'Settings', '#' );...
+...                              ^
+/home/lukasz/Training/trainingapp/app/views/layouts/_header.html.erb:23: syntax error, unexpected else, expecting ')'
+'.freeze;         else 
+                  ^~~~
+/home/lukasz/Training/trainingapp/app/views/layouts/_header.html.erb:25: syntax error, unexpected end, expecting ')'
+'.freeze;         end 
+                  ^~~
+/home/lukasz/Training/trainingapp/app/views/layouts/_header.html.erb:31: syntax error, unexpected ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/lukasz/Training/trainingapp/app/views/layouts/_header.html.erb:33: syntax error, unexpected end, expecting ')'
+          end
+          ^~~):
+  
+app/views/layouts/_header.html.erb:15: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:16: syntax error, unexpected '<'
+app/views/layouts/_header.html.erb:23: syntax error, unexpected else, expecting ')'
+app/views/layouts/_header.html.erb:25: syntax error, unexpected end, expecting ')'
+app/views/layouts/_header.html.erb:31: syntax error, unexpected ensure, expecting ')'
+app/views/layouts/_header.html.erb:33: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__1145936114527559154_47166353151300'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             Started GET "/" for ::1 at 2019-08-23 18:51:03 +0200
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/lukasz/.rbenv/versions/2.6.1/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (249.7ms)
+  Rendered layouts/_rails_default.html.erb (94.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:11
+  Rendered layouts/_header.html.erb (23.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 382ms (Views: 370.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:52:03 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (52.2ms)
+  Rendered layouts/_rails_default.html.erb (84.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:11
+  Rendered layouts/_header.html.erb (20.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 176ms (Views: 161.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:52:10 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_rails_default.html.erb (75.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:11
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 101ms (Views: 97.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:52:12 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (7.5ms)
+  Rendered layouts/_rails_default.html.erb (92.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:11
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 122ms (Views: 117.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for ::1 at 2019-08-23 18:52:14 +0200
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_rails_default.html.erb (122.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:11
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 144ms (Views: 139.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/help" for ::1 at 2019-08-23 18:52:16 +0200
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_rails_default.html.erb (74.3ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:11
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 95ms (Views: 92.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:52:17 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_rails_default.html.erb (106.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:11
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 145ms (Views: 138.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:52:37 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_rails_default.html.erb (41.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:11
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-08-23 18:52:52 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T8WGGQyFdKHpWFmjvfl3/SpQn6aiFw3bnjgaWuERKhAz8v5cBlAOxVrSHxApAJ7sdjWNsLkVjw2Ujqtxxzn4gA=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 37ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-08-23 18:52:55 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T8WGGQyFdKHpWFmjvfl3/SpQn6aiFw3bnjgaWuERKhAz8v5cBlAOxVrSHxApAJ7sdjWNsLkVjw2Ujqtxxzn4gA=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 66ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:53:27 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_rails_default.html.erb (47.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:11
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 66ms (Views: 63.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-08-23 18:53:30 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lfECTSnE5Z1KVt4pIQjeON4alGiGS1YuIVL3ntdmNnbpxnoIIxGf+fncmJq18Tcpgn+Gfp1J1Pgr5Ea18U7k5g=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 15ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:54:00 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_rails_default.html.erb (67.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 98ms (Views: 94.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-08-23 18:54:03 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (26.9ms)
+  Rendered layouts/_rails_default.html.erb (31.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 70ms (Views: 68.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-08-23 18:54:11 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HspkUFqcwRuOS7EI50b6MZxw/ToHLtN8O2IkeROifKCN1euhC9Kzcge30TCOXNnV4Ws458pBGoCUc2255PWvUw==", "session"=>{"email"=>"lukasz@lukasz.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lukasz@lukasz.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/users/35
+Completed 302 Found in 74ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/35" for ::1 at 2019-08-23 18:54:11 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:65
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (47.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:11
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 60ms (Views: 56.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 18:54:14 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_rails_default.html.erb (80.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:11
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 109ms (Views: 105.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 19:18:26 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_rails_default.html.erb (34.2ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:11
+  Rendered layouts/_header.html.erb (15.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 58ms (Views: 52.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 19:18:28 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_rails_default.html.erb (103.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:11
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 131ms (Views: 127.2ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-08-23 19:18:29 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wQ1z2nDUsDI2Ra0sdeQZeHxIPVw2gceqrx91Y40V0Yq/sZIBXs6RK0FpYMUUh4n4UKv5HO9Tnhcqw5SztDsfmw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 19:18:29 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_rails_default.html.erb (55.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 69ms (Views: 67.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-08-23 19:18:30 +0200
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (23.9ms)
+  Rendered layouts/_rails_default.html.erb (42.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 85ms (Views: 80.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-08-23 19:18:37 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HicBrNk1VqH1PlZihQq/rTp/IGfwfwh9pJCrldCNI7SNOI5diHskyHzCNlrsEJxJR2Tluj0QwYELgeJVJ9rwRw==", "session"=>{"email"=>"lukasz@lukasz.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lukasz@lukasz.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://localhost:3000/users/35
+Completed 302 Found in 71ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/35" for ::1 at 2019-08-23 19:18:37 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:66
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_rails_default.html.erb (49.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:11
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 63ms (Views: 58.2ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-08-23 19:18:40 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"osXP4/lRomjHK6AehTkd7yKxrEfeX/Aq0IRHeb3fIi7ceS4410uDcbAHbffkWo1vDlJoBweNqZdVWKaphPHsPw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-23 19:18:40 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_rails_default.html.erb (49.1ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 68ms (Views: 65.5ms | ActiveRecord: 0.0ms)
+
+

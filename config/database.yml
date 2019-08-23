@@ -72,7 +72,7 @@ test:
 # available as an environment variable. For example:
 #
 #   DATABASE_URL="postgres://myuser:mypass@localhost/somedatabase"
-#web: bundle exec puma -C config/puma.rb
+#web: bundle exec puma -C config/puma.rb  
 # You can use this database configuration with:
 #
 #   production:
